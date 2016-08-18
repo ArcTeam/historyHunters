@@ -2,32 +2,35 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,700);
 @import url("font/css/font-awesome.min.css");
-html{background:#EEE;font-family: 'Titillium Web', sans-serif !important;font-size:100% !important;color:#363A3F;}
-html {
-  background: url("../img/layout/old-notebook.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
+html{background:#fff;font-family: 'Titillium Web', sans-serif !important;font-size:100% !important;color:#363A3F;}
+html, body{width:100%;height:100%;}
+div#wrap{position: relative; width: 90%; min-height: 100%; margin: 0px auto; height: auto;}
+div#wrap2{position: relative; width: 100%; margin: 0px auto; min-height:80%;height: auto;background:#fff}
 select, input, textarea,button{border:1px solid #999; font-size:.8rem; padding:6px; vertical-align:top; border-radius: 3px;}
 select{background:#fff;}
 textarea{height:20px;}
 button[type=submit]{background:#0088cc;cursor:pointer;width:97%;font-size:1.25rem;color:#fff;border:1px solid #0D6FA0;}
 button[type=submit]:hover{background:#0D6FA0;}
+a{color:#363A3F;}
+/** classi generiche **/
+.transition, a{-webkit-transition: all .30s linear; -moz-transition: all .30s linear; -ms-transition: all .30s linear; -o-transition: all .30s linear; transition: all .30s linear;}
+
 
 /* mobile */
 @media only screen and (min-width:319px) and (max-width:480px) {
     body:before { content: 'mobile'; display: none; }
-
+    html{background: url("../img/layout/bgSmall.jpg") no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 }
 /* Tablets */
 @media only screen and (min-width:481px) and (max-width:1024px) {
     body:before { content: 'tablet'; display: none; }
+    html{background: url("../img/layout/old-notebook.jpg") no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 }
 
 /* pc */
 @media screen and (min-width: 1025px){
     body:before { content: 'desktop'; display: none; }
-    
+    html{background: url("../img/layout/old-notebook.jpg") no-repeat center center fixed;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
 }
